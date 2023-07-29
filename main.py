@@ -231,6 +231,6 @@ if __name__ == "__main__":
 
     print("定时任务已启动")
     scheduler = BlockingScheduler()
-    scheduler.add_job(send_push_notification,'cron', hour=0)
+    scheduler.add_job(send_push_notification,'cron', hour=7)
     # scheduler.add_job(send_push_notification,'interval', seconds=10)
     scheduler.start()
